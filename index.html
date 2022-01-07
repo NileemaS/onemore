@@ -1,17 +1,83 @@
 <html>
-    <style>
-        h1{
-            color:aqua;
-        }
-    </style>
     <head>
-        first index file
+    <style>
+        body{
+            width: 90%;
+            max-width: 900px;
+            margin: 0 auto;
+            font: .9em/1.2 Arial, Helvetica, sans-serif;
+        }
+        h1{            
+            width:100%;
+            background-color:aqua;          
+            text-shadow: 3px 3px 3px 1px black;
+            text-align: center;
+        }
+        .picsize{
+            width: 150px ;
+            height: 150px;
+            border: 5px solid black;
+            object-fit: contain;
+        }
+        .wrapper {           
+            width: 100%;
+            background-color: violet;
+            display:flex;            
+        }
+        .positioned{
+            position:absolute;
+            background: crimson;
+            color: #fff;
+            top: 50%;
+            left: 20%;
+            padding: 20px;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+        nav li {
+            float:left;
+        }
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        a:hover{
+            color: yellow;
+        }
+    
+    </style>
+    <title>Doll World</title>
     </head>
-<h1>
-    Hello how are you 
+    <body>
+        <header>
+            <div>        
+                <h1>Welcome to Doll World</h1>
+                <nav>
+                  <ul>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">Meet the team</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Search</a></li>
+                  </ul>
+                </nav>
+            </div> 
+        </header>        
 
-</h1>
-<p>
-    this is my great project
-</p>
+            <div  class="wrapper">
+                <img class="picsize" src="doll.jpg"/>  
+                <p style="margin-left: 10px;"> This is my great project </p>
+            </div>
+        
+        <div  class="positioned">   Hello how are you</div>
+        
+    </body>
 </html>
